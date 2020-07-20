@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_3sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_item_paket"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            tools:src="@drawable/wedding_party_3"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_nama_paket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorPrimary"
+            tools:text="Paket A"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <View
+            android:id="@+id/view_garis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/img_item_paket"/>
+
+        <TextView
+            android:layout_below="@id/view_garis"
+            android:id="@+id/txt_harga_paket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorPrimary"
+            tools:text="Rp500.000"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/btn_lihat_detail"
+            android:background="@drawable/bg_btn"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/view_garis"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Lihat Detail"
+            android:textAllCaps="false"
+            android:padding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_baseline_zoom_in_24"
+            android:fontFamily="@font/roboto"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

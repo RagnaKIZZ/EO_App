@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "745613993559",
+    "firebase_url": "https://harza-eo-ca79f.firebaseio.com",
+    "project_id": "harza-eo-ca79f",
+    "storage_bucket": "harza-eo-ca79f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745613993559:android:218f78a89f5b953df5a512",
+        "android_client_info": {
+          "package_name": "com.hard.eoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745613993559-qa4lkiq399i3il57jdskn9j36ln00ghb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK9Rkplsbkke75bDFigI7oVL5KkqVxxEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745613993559-qa4lkiq399i3il57jdskn9j36ln00ghb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

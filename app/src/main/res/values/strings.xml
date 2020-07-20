@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Harza EO</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="mohon_login_untuk_melanjutkan">Mohon login untuk melanjutkan</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="re_type_password">Re-Type Password</string>
+    <string name="daftar">Daftar</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="retype">Ketikkan kembali Kata Sandi</string>
+    <string name="valid_email">Silahkan masukkan alamat email yang valid</string>
+    <string name="cant_empty">Field tidak boleh kosong!</string>
+    <string name="doesnt_match">Harus cocok dengan kata sandi!</string>
+    <string name="password_must_contains">Kata sandi min 8 karakter dan harus mengandung angka, huruf kecil, huruf besar</string>
+    <string name="valid_number">Silakan masukkan nomor yang valid</string>
+    <string name="not_checked">Harus dicentang untuk melanjutkan</string>
+
+    <string name="servererrorr">Server error, tolong segarkan halaman!</string>
+    <string name="nointernett">Koneksi terputus, tolong segarkan halaman!</string>
+    <string name="no_cars">Tidak ada paket yang tersedia</string>
+    <string name="no_trans">Kamu belum melakukan transaksi apapun!</string>
+    <string name="server_error">Server error!</string>
+    <string name="cek_internet">Periksa jaringan Anda!</string>
+
+    <string name="something_wrong">Ada yang salah!</string>
+    <string name="pilih_tanggal_dan_jam">Pilih tanggal dan jam</string>
+    <string name="tanggal_pinjam">Tanggal Pinjam</string>
+    <string name="select_date">Pilih tanggal</string>
+    <string name="tanggal_kembali">Tanggal Kembali</string>
+    <string name="pilih_jam_sewa">Pilih jam sewa</string>
+    <string name="jam_dipilih">Jam dipilih</string>
+    <string name="buat_order">Buat Order</string>
+    <string name="worng_end_date">Can\'t end work at this time!</string>
+    <string name="cant_startt">Tidak bisa mulai menyewa pada waktu ini, paket dipesan minimal H-5</string>
+    <string name="cant_endd">Tidak bisa menyelesaikan sewa pada waktu ini</string>
+    <string name="jam_startt">Jam mulai sewa mulai dari pukul 09:00 sampai 15:00</string>
+    <string name="lengkapi_data">Tolong lengkapi data terlebih dahulu</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="profil">Profil</string>
+    <string name="img">trans_img</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="update">Update</string>
+    <string name="nothx">Tidak, Terimakasih</string>
+    <string name="newupdate">Versi Baru Tersedia</string>
+    <string name="plzupdate">Mohon update untuk melanjutkan penggunaan</string>
+</resources>

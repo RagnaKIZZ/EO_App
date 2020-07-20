@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hard.eoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/configurenetwork"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.profil.detailfoto.DetailFotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppPhoto"/>
+        <activity android:name=".ui.profil.editprofil.EditProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.order.DetailOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".paket.detailpaket.DetailPaketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".paket.PaketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
