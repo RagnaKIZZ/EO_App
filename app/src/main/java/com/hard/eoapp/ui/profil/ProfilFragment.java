@@ -100,7 +100,7 @@ public class ProfilFragment extends Fragment {
                     .into(imgProfile);
             progressBar.setVisibility(View.GONE);
         } else {
-            HelperClass.loadGambar(getActivity(), UrlServer.URL_FOTO + foto, progressBar, imgProfile);
+            HelperClass.loadGambarProfil(getActivity(), UrlServer.URL_FOTO + foto, progressBar, imgProfile);
         }
 
         txtNama.setText(Prefs.getString(SessionPrefs.NAMA, ""));
@@ -238,7 +238,7 @@ public class ProfilFragment extends Fragment {
             Log.d(TAG, "onResume: kosong: " + Prefs.getString(SessionPrefs.FOTO, ""));
         } else {
             if (!foto.equals(Prefs.getString(SessionPrefs.FOTO, ""))) {
-                HelperClass.loadGambar(getActivity(), UrlServer.URL_FOTO + Prefs.getString(SessionPrefs.FOTO, ""), progressBar, imgProfile);
+                HelperClass.loadGambarProfil(getActivity(), UrlServer.URL_FOTO + Prefs.getString(SessionPrefs.FOTO, ""), progressBar, imgProfile);
                 Log.d(TAG, "onResume: beda" + foto);
                 Log.d(TAG, "onResume: beda: " + Prefs.getString(SessionPrefs.FOTO, ""));
             }

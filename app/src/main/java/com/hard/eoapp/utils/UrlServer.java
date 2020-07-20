@@ -2,7 +2,7 @@ package com.hard.eoapp.utils;
 
 public class UrlServer {
 
-    public static String BASE_URL = "http://192.168.43.244/HarzaAPI/public/";
+    public static String BASE_URL = "https://harzaeo.000webhostapp.com/";
 
     public static String URL_REGISTER = BASE_URL + "user/register";
     public static String URL_LOGIN = BASE_URL + "user/login";

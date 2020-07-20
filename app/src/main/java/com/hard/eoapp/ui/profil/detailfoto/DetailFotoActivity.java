@@ -60,7 +60,7 @@ public class DetailFotoActivity extends AppCompatActivity {
                     .load(R.drawable.blank_profile)
                     .into(photoView);
         } else {
-            HelperClass.loadGambar(DetailFotoActivity.this, UrlServer.URL_FOTO + foto, progressBar, photoView);
+            HelperClass.loadGambarProfil(DetailFotoActivity.this, UrlServer.URL_FOTO + foto, progressBar, photoView);
         }
     }
 
@@ -194,7 +194,7 @@ public class DetailFotoActivity extends AppCompatActivity {
                         dialog.dismiss();
                         if (okHttpResponse.isSuccessful()) {
                             if (response.getCode() == 200) {
-                                HelperClass.loadGambar(DetailFotoActivity.this, UrlServer.URL_FOTO + response.getFoto(), progressBar, photoView);
+                                HelperClass.loadGambarProfil(DetailFotoActivity.this, UrlServer.URL_FOTO + response.getFoto(), progressBar, photoView);
 //                                Glide.with(DetailFotoActivity.this)
 //                                        .load(UrlServer.URL_FOTO + response.getFoto())
 //                                        .into(photoView);

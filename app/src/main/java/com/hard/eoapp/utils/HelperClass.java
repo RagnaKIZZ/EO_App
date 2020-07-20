@@ -125,12 +125,36 @@ public class HelperClass {
                     DateUtils.MINUTE_IN_MILLIS, DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_SHOW_YEAR
                             | DateUtils.FORMAT_NUMERIC_DATE));
         } else {
-            time = "just now";
+            time = "Baru saja";
         }
         txt.setText(time);
     }
 
     public static void loadGambar(final Context context, String url, final ProgressBar progressBar, final ImageView img) {
+        progressBar.setVisibility(View.VISIBLE);
+        Glide.with(context)
+                .load(url)
+                .error(R.drawable.err)
+                .apply(new RequestOptions().override(750, 600))
+                .centerCrop()
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                        progressBar.setVisibility(View.GONE);
+                        Toast.makeText(context, "Gagal memuat gambar!", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                        progressBar.setVisibility(View.GONE);
+                        return false;
+                    }
+                })
+                .into(img);
+    }
+
+    public static void loadGambarProfil(final Context context, String url, final ProgressBar progressBar, final ImageView img) {
         progressBar.setVisibility(View.VISIBLE);
         Glide.with(context)
                 .load(url)

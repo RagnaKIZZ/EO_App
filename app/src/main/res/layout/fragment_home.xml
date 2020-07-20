@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <ImageView
+        android:alpha="0.6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/event_human" />
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,6 +43,7 @@
                 android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
                 android:stretchColumns="*">
 
                 <TableRow
@@ -113,10 +122,5 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-    <ImageView
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_200sdp"
-        android:scaleType="fitXY"
-        android:src="@drawable/event_human" />
+
 </RelativeLayout>
